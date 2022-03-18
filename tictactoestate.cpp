@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -31,5 +32,9 @@ int main() {
             }
         }
         cout << gameline << endl;
+        string playedSpots = gameline.substr(0, 9);
+        cout << playedSpots << endl;
+        string choiceSpots = gameline.substr(9, gameline.length());
+        cout << choiceSpots << endl;
     }
 }
